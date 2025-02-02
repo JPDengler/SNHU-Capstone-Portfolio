@@ -1,91 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SNHU Capstone Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #0073e6;
-      color: white;
-      padding: 20px 0;
-    }
-    section {
-      margin: 20px;
-      padding: 20px;
-    }
-    footer {
-      background-color: #f1f1f1;
-      padding: 10px 0;
-      font-size: 0.9em;
-      color: #555;
-    }
-    .enhancement {
-      margin: 20px auto;
-      padding: 20px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      max-width: 800px;
-      text-align: left;
-    }
-    .enhancement h3 {
-      color: #0073e6;
-    }
-    .placeholder {
-      color: #888;
-      font-style: italic;
-    }
-    a {
-      color: #0073e6;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNHU Capstone Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
+
+<header>
     <h1>SNHU Capstone Portfolio</h1>
     <p>Joseph Dengler</p>
-  </header>
-  <section>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="enhancement-one.html">Enhancement One</a>
+    <a href="enhancement-two.html">Enhancement Two</a>
+    <a href="enhancement-three.html">Enhancement Three</a>
+    <a href="code-review.html">Code Review</a>
+</nav>
+
+<section>
     <h2>Welcome!</h2>
     <p>This portfolio showcases my capstone projects for CS-499 at Southern New Hampshire University.</p>
-    <p>Check back soon for updates!</p>
-  </section>
+</section>
 
-  <section class="enhancement">
-    <h3>Enhancement One: Nuoro Weight Management App</h3>
-    <p>The Nuoro Weight Management App was designed as a capstone project to address real-world health management needs. This application allows users to:</p>
+<section class="enhancement">
+    <h3>Enhancement One: Software Engineering & Design</h3>
+    <p>Focused on **data visualization, interactivity, and validation** to improve user experience.</p>
     <ul>
-      <li>Log daily weight entries with timestamps.</li>
-      <li>Set and track weight goals.</li>
-      <li>Edit and delete previous entries.</li>
-      <li>Receive SMS notifications upon reaching their goals (with user permission).</li>
+        <li>Implemented <strong>RecyclerView</strong> for dynamic weight logging.</li>
+        <li>Integrated <strong>MPAndroidChart</strong> for progress visualization.</li>
+        <li>Added <strong>edit & delete</strong> functionality for user entries.</li>
+        <li>Fixed <strong>SMS permission handling</strong> for notifications.</li>
     </ul>
-    <p>The app employs a structured database with three primary tables: users, daily weight entries, and goal weight. It features a clean user interface with interactive elements, ensuring accessibility and ease of use. </p>
-    <p><strong>Source Code:</strong> <a href="https://github.com/JPDengler/Nuoro-Weight-Management-App" target="_blank">Nuoro Weight Management App Repository</a></p>
-  </section>
+    <a href="enhancement-one.html" class="button">View Full Details</a>
+</section>
 
-  <section class="enhancement">
-    <h3>Enhancement Two: Advanced AI Implementation</h3>
-    <p class="placeholder">[Placeholder: This section will detail the integration of advanced artificial intelligence models, including neural networks, to solve complex problems. Specific applications and implementations will be discussed here.]</p>
-  </section>
+<section class="enhancement">
+    <h3>Enhancement Two: Algorithms & Data Structures</h3>
+    <p>Focused on **sorting, filtering, and input validation** to improve database efficiency.</p>
+    <ul>
+        <li><strong>Sorting Options:</strong> Sort by Date (Asc/Desc) & Weight (Asc/Desc).</li>
+        <li><strong>Search Feature:</strong> Filter by date range & weight range.</li>
+        <li><strong>Database Optimization:</strong> Improved SQLite queries.</li>
+    </ul>
+    <a href="enhancement-two.html" class="button">View Full Details</a>
+</section>
 
-  <section class="enhancement">
-    <h3>Enhancement Three: Secure Coding Practices</h3>
-    <p class="placeholder">[Placeholder: This section will elaborate on secure coding principles employed in project development, focusing on best practices to prevent vulnerabilities such as SQL injection, buffer overflows, and more.]</p>
-  </section>
-
-  <footer>
+<footer>
     &copy; 2025 Joseph Dengler | <a href="https://github.com/JPDengler/SNHU-Capstone-Portfolio" target="_blank">GitHub Repository</a>
-  </footer>
+</footer>
+
 </body>
 </html>
