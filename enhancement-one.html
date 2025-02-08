@@ -14,36 +14,78 @@
         <a href="index.html">Home</a>
         <a href="enhancement-one.html">Enhancement One</a>
         <a href="enhancement-two.html">Enhancement Two</a>
+        <a href="enhancement-three.html">Enhancement Three</a>
         <a href="code-review.html">Code Review</a>
     </nav>
 </header>
 
 <section>
-    <h2>Overview</h2>
-    <p>This enhancement improved the <strong>Nuoro Weight-Tracking App</strong> by introducing <strong>data visualization, user interactivity, and validation</strong> to enhance the experience of weight tracking.</p>
+    <div class="header-with-button">
+        <h2>Overview</h2>
+        <a href="https://github.com/JPDengler/Nuoro-Weight-Management-App/tree/Enhancement-One" class="repo-button" target="_blank">View Repository</a>
+    </div>
+    <p>The <strong>Nuoro Weight-Tracking App</strong> (on Enhancement One branch) was improved to enhance <strong>data visualization, user interactivity, and validation</strong>. This enhancement focused on improving the user experience, ensuring data reliability, and introducing dynamic visual feedback.</p>
 </section>
 
 <section>
     <h2>Key Improvements</h2>
     <ul>
-        <li><strong>RecyclerView:</strong> Replaced static weight logs with a dynamic, scrollable list.</li>
-        <li><strong>MPAndroidChart:</strong> Integrated real-time graphing of weight progress.</li>
-        <li><strong>Input Validation:</strong> Ensured users enter realistic weight values (1-500 lbs).</li>
-        <li><strong>SMS Notifications:</strong> Implemented permission handling for weight goal alerts.</li>
+        <li><strong>Input Validation:</strong> Ensured valid date format (MM/DD/YY) and weight range (1-500 lbs).</li>
+        <li><strong>Interactive Data Management:</strong> Replaced static text with a RecyclerView supporting edit and delete actions.</li>
+        <li><strong>Data Visualization:</strong> Integrated MPAndroidChart for dynamic weight trend visualization.</li>
+        <li><strong>Improved SMS Permissions:</strong> Fixed broken request flow for handling permissions correctly.</li>
+        <li><strong>User Feedback Enhancements:</strong> Added error messages, confirmation dialogs, and success indicators.</li>
+        <li><strong>Database Enhancements:</strong> Refactored DatabaseHelper to support real-time updates.</li>
+        <li><strong>Goal Weight Management:</strong> Displayed goal weight on the graph for easy tracking.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Technical Implementation</h2>
+    <p>The implementation involved several key changes:</p>
+    <ul>
+        <li>Refactored the <code>DatabaseHelper</code> class to include input validation and real-time data updates.</li>
+        <li>Integrated MPAndroidChart to visualize weight trends dynamically.</li>
+        <li>Enhanced RecyclerView for better data presentation with edit/delete actions.</li>
+        <li>Improved feedback mechanisms such as error messages and confirmation dialogs.</li>
     </ul>
 </section>
 
 <section>
     <h2>Screenshots</h2>
     <div class="screenshot-container">
-        <img src="Screenshots/Login Page.png" alt="Login Page">
-        <img src="Screenshots/SMS Request.png" alt="SMS Permission Request">
-        <img src="Screenshots/Create Account Popup.png" alt="Create Account Confirmation">
-        <img src="Screenshots/DataDisplayInitial.png" alt="Initial Data Display">
-        <img src="Screenshots/Edit Entry.png" alt="Edit Entry">
-        <img src="Screenshots/Delete Entry.png" alt="Delete Entry Confirmation">
-        <img src="Screenshots/Goal Weight.png" alt="Goal Weight Entry">
-        <img src="Screenshots/Clear All Data.png" alt="Clear Data Confirmation">
+        <figure>
+            <figcaption>Login Screen</figcaption>
+            <img src="images/Login Page.png" alt="Login Screen">
+        </figure>
+        <figure>
+            <figcaption>SMS Permission Request</figcaption>
+            <img src="images/SMS Request.png" alt="SMS Permission Request">
+        </figure>
+        <figure>
+            <figcaption>Account Creation</figcaption>
+            <img src="images/Create Account Popup.png" alt="Account Creation">
+        </figure>
+        <figure>
+            <figcaption>Initial Data Display</figcaption>
+            <img src="images/DataDisplayInitial.png" alt="Initial Data Display">
+        </figure>
+        <figure>
+            <figcaption>Edit Entry Dialog</figcaption>
+            <img src="images/Edit Entry.png" alt="Edit Entry Dialog">
+        </figure>
+        <figure>
+            <figcaption>Delete Entry Confirmation</figcaption>
+            <img src="images/Delete Entry.png" alt="Delete Entry Confirmation">
+        </figure>
+        <figure>
+            <figcaption>Goal Weight Entry</figcaption>
+            <img src="images/Goal Weight.png" alt="Goal Weight Entry">
+        </figure>
+        <figure>
+            <figcaption>Clear All Data Confirmation</figcaption>
+            <img src="images/Clear All Data.png" alt="Clear All Data Confirmation">
+        </figure>
     </div>
 </section>
 
