@@ -54,34 +54,34 @@ The **Nuoro Weight Management App** is an Android-based mobile application desig
 ### **Enhancement One: Software Engineering & Design**
 | Login Screen | SMS Permission Request |
 |-------------|-----------------------|
-| ![Login](Screenshots/Login%20Page.png) | ![SMS Request](Screenshots/SMS%20Request.png) |
+| ![Login](image/Login%20Page.png) | ![SMS Request](image/SMS%20Request.png) |
 
 | Account Creation | Initial Data Display |
 |----------------|---------------------|
-| ![Create Account](Screenshots/Create%20Account%20Popup.png) | ![Initial Display](Screenshots/DataDisplayInitial.png) |
+| ![Create Account](image/Create%20Account%20Popup.png) | ![Initial Display](image/DataDisplayInitial.png) |
 
 | Edit Entry Dialog | Delete Entry Confirmation |
 |------------------|-------------------------|
-| ![Edit Entry](Screenshots/Edit%20Entry.png) | ![Delete Entry](Screenshots/Delete%20Entry.png) |
+| ![Edit Entry](image/Edit%20Entry.png) | ![Delete Entry](image/Delete%20Entry.png) |
 
 | Goal Weight Entry | Clear All Data Confirmation |
 |------------------|---------------------------|
-| ![Goal Weight](Screenshots/Goal%20Weight.png) | ![Clear Data](Screenshots/Clear%20All%20Data.png) |
+| ![Goal Weight](image/Goal%20Weight.png) | ![Clear Data](image/Clear%20All%20Data.png) |
 
 ---
 
 ### **Enhancement Two: Algorithms & Data Structures**
 | Sort by Date (Ascending) | Sort by Date (Descending) |
 |--------------------------|--------------------------|
-| ![Sort by Date A](Screenshots/Sort%20by%20Date%20A.png) | ![Sort by Date D](Screenshots/Sort%20by%20Date%20D.png) |
+| ![Sort by Date A](images/Sort%20by%20Date%20A.png) | ![Sort by Date D](images/Sort%20by%20Date%20D.png) |
 
 | Sort by Weight (Ascending) | Sort by Weight (Descending) |
 |----------------------------|----------------------------|
-| ![Sort by Weight A](Screenshots/Sort%20by%20Weight%20A.png) | ![Sort by Weight D](Screenshots/Sort%20by%20Weight%20D.png) |
+| ![Sort by Weight A](images/Sort%20by%20Weight%20A.png) | ![Sort by Weight D](images/Sort%20by%20Weight%20D.png) |
 
 | Search & List | Input Validation |
 |--------------|-----------------|
-| ![List](Screenshots/List.png) | ![Invalid Weight](Screenshots/Invalid%20Weight%20Dialog.png) |
+| ![List](images/List.png) | ![Invalid Weight](images/Invalid%20Weight%20Dialog.png) |
 
 ---
 
