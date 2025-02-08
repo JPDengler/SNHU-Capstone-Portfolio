@@ -54,19 +54,19 @@ The **Nuoro Weight Management App** is an Android-based mobile application desig
 ### **Enhancement One: Software Engineering & Design**
 | Login Screen | SMS Permission Request |
 |-------------|-----------------------|
-| ![Login](image/Login%20Page.png) | ![SMS Request](image/SMS%20Request.png) |
+| ![Login](images/Login%20Page.png) | ![SMS Request](images/SMS%20Request.png) |
 
 | Account Creation | Initial Data Display |
 |----------------|---------------------|
-| ![Create Account](image/Create%20Account%20Popup.png) | ![Initial Display](image/DataDisplayInitial.png) |
+| ![Create Account](images/Create%20Account%20Popup.png) | ![Initial Display](images/DataDisplayInitial.png) |
 
 | Edit Entry Dialog | Delete Entry Confirmation |
 |------------------|-------------------------|
-| ![Edit Entry](image/Edit%20Entry.png) | ![Delete Entry](image/Delete%20Entry.png) |
+| ![Edit Entry](images/Edit%20Entry.png) | ![Delete Entry](images/Delete%20Entry.png) |
 
 | Goal Weight Entry | Clear All Data Confirmation |
 |------------------|---------------------------|
-| ![Goal Weight](image/Goal%20Weight.png) | ![Clear Data](image/Clear%20All%20Data.png) |
+| ![Goal Weight](images/Goal%20Weight.png) | ![Clear Data](images/Clear%20All%20Data.png) |
 
 ---
 
