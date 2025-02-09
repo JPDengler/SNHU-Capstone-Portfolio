@@ -136,3 +136,14 @@ footer {
 .repo-button:hover {
     background-color: #005bb5;
 }
+
+.screenshots-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.screenshots-grid figure {
+    text-align: center;
+}
