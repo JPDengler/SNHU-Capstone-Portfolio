@@ -3,34 +3,37 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
-    color: #333;
+    background-color: #1e1e2e; /* Dark primary background */
+    color: #f5f5f5; /* Light gray text */
 }
 
 /* Header */
 header {
-    background-color: #0073e6;
-    color: white;
+    background-color: #27293d; /* Slightly lighter dark tone */
+    color: var(--text-color); /* Text color remains consistent */
     padding: 20px;
     text-align: center;
 }
 
 /* Navigation Bar */
 nav {
-    background-color: #005bb5;
+    background-color: #27293d; /* Matches header for uniformity */
     padding: 10px;
     text-align: center;
 }
 
 nav a {
-    color: white;
+    color: #f5f5f5; /* Light gray for better readability */
     text-decoration: none;
     padding: 10px 20px;
     display: inline-block;
+    border-radius: 5px; /* Slightly rounded links */
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #003d80;
+    background-color: #ff7900; /* Orange for hover effect */
+    color: #121212; /* Darker text on hover for contrast */
 }
 
 /* Section Styling */
@@ -38,21 +41,24 @@ section {
     max-width: 900px;
     margin: 20px auto;
     padding: 20px;
-    background: white;
+    background: #27293d; /* Slightly lighter dark tone for contrast */
     border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    color: #f5f5f5; /* Text remains light gray */
 }
 
 /* Enhancement Cards */
 .enhancement {
     margin-bottom: 20px;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #3a3b4f; /* Subtle border */
     border-radius: 8px;
+    background-color: #1e1e2e; /* Match the theme */
+    color: #f5f5f5;
 }
 
 .enhancement h3 {
-    color: #0073e6;
+    color: #ff7900; /* Vibrant orange for headings */
 }
 
 /* Buttons */
@@ -62,22 +68,23 @@ section {
     margin: 10px auto;
     padding: 10px;
     text-align: center;
-    background-color: #0073e6;
-    color: white;
+    background-color: #ff7900; /* Bright orange for buttons */
+    color: #121212; /* Dark text for contrast */
     text-decoration: none;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 .button:hover {
-    background-color: #005bb5;
+    background-color: #ff9c42; /* Lighter orange on hover */
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #f1f1f1;
-    color: #555;
+    background-color: #27293d; /* Match header and nav */
+    color: #a6a6a6; /* Muted gray for footer text */
     margin-top: 20px;
 }
 
@@ -99,17 +106,19 @@ footer {
 .screenshot-container img {
     max-width: 90%; 
     height: auto; 
-    border: 1px solid #ddd; 
+    border: 1px solid #3a3b4f; 
     border-radius: 5px; 
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); 
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Slightly darker shadow */
 }
 
 .screenshot-container figcaption {
     font-weight: bold; 
     font-size: 1.1em; 
     margin-top: 10px; 
+    color: #f5f5f5; /* Matches text color */
 }
 
+/* Header with Button */
 .header-with-button {
     display: flex;
     justify-content: space-between;
@@ -125,18 +134,19 @@ footer {
 .repo-button {
     text-decoration: none;
     padding: 8px 12px;
-    background-color: #0073e6;
-    color: white;
+    background-color: #ff7900; /* Orange for buttons */
+    color: #121212; /* Dark text for contrast */
     font-size: 0.9em;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s;
 }
 
 .repo-button:hover {
-    background-color: #005bb5;
+    background-color: #ff9c42; /* Lighter orange for hover */
 }
 
+/* Screenshots Grid */
 .screenshots-grid {
     display: flex;
     flex-wrap: wrap;
@@ -146,4 +156,5 @@ footer {
 
 .screenshots-grid figure {
     text-align: center;
+    color: #f5f5f5; /* Matches theme */
 }
