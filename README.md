@@ -1,15 +1,16 @@
 # SNHU CS-499 Capstone Portfolio Webpage Overview
 
-# Nuoro Weight Management App
-
 ## Overview
-The **Nuoro Weight Management App** is an Android-based mobile application designed to help users track their weight, set goals, and analyze progress through data visualization. Originally developed in **CS-360: Mobile Architect & Programming**, it has been enhanced as part of **CS-499: Computer Science Capstone**, focusing on **Software Engineering & Design (Enhancement One)**, **Algorithms & Data Structures (Enhancement Two)**, and **Databases (Enhancement Three)**.
+The SNHU CS-499 Capstone Portfolio highlights two projects that demonstrate my expertise in software engineering, algorithms, data structures, and database management. Both projects have been enhanced as part of the capstone course to meet professional standards and align with course outcomes.
 
 ---
 
-## Features
+## Projects
 
-### **Original Implementation**
+### **Nuoro Weight Management App**
+The **Nuoro Weight Management App** is an Android-based mobile application designed to help users track their weight, set goals, and analyze progress through data visualization. Originally developed in **CS-360: Mobile Architect & Programming**, it focuses on providing an intuitive user experience for personal weight management.
+
+#### **Original Implementation**
 - Basic SQLite storage for weight logs.
 - Static text-based weight entry display.
 - Simple goal-setting functionality.
@@ -18,7 +19,31 @@ The **Nuoro Weight Management App** is an Android-based mobile application desig
 
 ---
 
+### **Grazioso Salvare Dashboard**
+The **Grazioso Salvare Dashboard** is a web-based application designed for animal rescue organizations to visualize, filter, and analyze rescue animal data. It uses **MongoDB**, **Dash**, and **Plotly** for interactive data visualization.
+
+#### **Original Implementation**
+- **Database Integration**:
+  - MongoDB for storing animal rescue data.
+  - CRUD operations implemented in the `AnimalShelter` class.
+- **Data Visualization**:
+  - Interactive dashboard with filters for breed, location, and rescue type.
+  - Pie charts and maps dynamically update based on user-defined filters.
+- **Limitations**:
+  - Lacked proper error handling for CRUD operations.
+  - Query performance was slow for larger datasets due to missing indexes.
+  - Hardcoded credentials posed security risks.
+
+---
+
+## Enhancements Overview
+
+The enhancements applied to these projects span three major categories: **Software Engineering & Design**, **Algorithms & Data Structures**, and **Databases**. Below is a summary of each enhancement and how it improved the respective projects:
+
+---
+
 ## **Enhancement One: Software Engineering & Design**
+### **Nuoro Weight Management App**
 - **Input Validation**:
   - Ensured valid date format (`MM/DD/YY`) and weight range (`1-500 lbs`).
   - Prevented invalid entries from being stored.
@@ -38,6 +63,7 @@ The **Nuoro Weight Management App** is an Android-based mobile application desig
 ---
 
 ## **Enhancement Two: Algorithms & Data Structures**
+### **Nuoro Weight Management App**
 - **Sorting Options**:
   - Sort by **Date (Ascending/Descending)**.
   - Sort by **Weight (Ascending/Descending)**.
@@ -52,6 +78,7 @@ The **Nuoro Weight Management App** is an Android-based mobile application desig
 ---
 
 ## **Enhancement Three: Databases**
+### **Grazioso Salvare Dashboard**
 - **Error Handling**:
   - Implemented structured exception handling in CRUD methods to improve reliability and debugging.
 - **Query Optimization**:
@@ -62,6 +89,28 @@ The **Nuoro Weight Management App** is an Android-based mobile application desig
   - Enhanced inline comments and created a detailed guide for MongoDB queries and operations.
 - **Unit Testing**:
   - Developed comprehensive unit tests to validate CRUD operations and ensure database reliability.
+
+---
+
+## Technical Implementation
+Each enhancement demonstrates key computer science principles and applies industry best practices to improve software design, user experience, performance, and security.
+
+1. **Nuoro Weight Management App**:
+   - Focused on enhancing interactivity, data visualization, and data reliability.
+   - Applied robust validation and dynamic UI updates.
+2. **Grazioso Salvare Dashboard**:
+   - Improved database security, performance, and maintainability.
+   - Enhanced query performance and ensured reliable CRUD operations through testing.
+
+---
+
+## How to Run
+1. **Nuoro Weight Management App**:
+   - Open in **Android Studio**.
+   - Run on a compatible emulator or physical Android device.
+2. **Grazioso Salvare Dashboard**:
+   - Clone the repository and run the Jupyter Notebook.
+   - Ensure MongoDB is set up and configured.
 
 ---
 
