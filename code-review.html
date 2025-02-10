@@ -20,55 +20,127 @@
 
 <section>
     <h2>Overview</h2>
-    <p>This video demonstrates my comprehensive code review for the <strong>Nuoro Weight-Tracking Application</strong> and <strong>Grazioso Salvare Dashboard</strong>. It covers all three enhancement categories: <strong>Software Engineering and Design</strong>, <strong>Algorithms and Data Structures</strong>, and <strong>Databases</strong>.</p>
-    <p>The script reviews the artifacts' existing functionality, analyzes weaknesses, and outlines planned enhancements to align with course outcomes and industry standards.</p>
+    <p>
+        This code review focuses on two key projects from my portfolio:
+        <strong>Nuoro Weight-Tracking Application</strong> and <strong>Grazioso Salvare Dashboard</strong>.
+        These artifacts align with three critical categories of computer science:
+        <strong>Software Engineering and Design</strong>, <strong>Algorithms and Data Structures</strong>, 
+        and <strong>Databases</strong>.
+    </p>
+    <p>
+        Through this review, I analyze the current functionality of these projects, identify key areas for improvement, 
+        and outline planned enhancements that align with industry standards and course outcomes. 
+        These updates aim to showcase my proficiency in designing robust, scalable, and user-centric software solutions.
+    </p>
 </section>
 
 <section>
     <h2>Code Review Video</h2>
     <div class="video-container">
-        <iframe width="720" height="405" 
-                src="https://www.youtube.com/embed/X0bomzldX_I" 
-                title="Code Review Video" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
+        <iframe 
+            width="720" 
+            height="405" 
+            src="https://www.youtube.com/embed/X0bomzldX_I" 
+            title="Code Review Video" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
         </iframe>
         <p><a href="https://www.youtube.com/watch?v=X0bomzldX_I" target="_blank">Watch on YouTube</a></p>
     </div>
 </section>
 
-
 <section>
     <h2>Highlights from the Code Review</h2>
+
     <h3>Nuoro Weight-Tracking Application</h3>
+    <h4>Enhancement 1: Software Engineering and Design</h4>
+    <p>
+        The Nuoro app allows users to log weight data, set goals, and receive SMS notifications. However, several limitations 
+        were identified, including minimal input validation, poor user feedback, and limited interactivity.
+    </p>
     <ul>
-        <li><strong>Category 1: Software Engineering and Design</strong>
-            <ul>
-                <li>Planned Enhancements: Input validation, improved user feedback, RecyclerView, MPAndroidChart.</li>
-            </ul>
-        </li>
-        <li><strong>Category 2: Algorithms and Data Structures</strong>
-            <ul>
-                <li>Planned Enhancements: Sorting and filtering, input validation, efficient data access in `getAllData()`.</li>
-            </ul>
-        </li>
+        <li><strong>Identified Weaknesses:</strong></li>
+        <ul>
+            <li>Lack of validation for login credentials, dates, and weight inputs.</li>
+            <li>Generic error messages, providing insufficient feedback to users.</li>
+            <li>Plain text data display, with no interactivity for managing entries.</li>
+        </ul>
+        <li><strong>Planned Enhancements:</strong></li>
+        <ul>
+            <li>Implement input validation to ensure proper data format and realistic values.</li>
+            <li>Replace static TextView with a RecyclerView for interactive data management.</li>
+            <li>Integrate MPAndroidChart for dynamic weight trend visualization.</li>
+            <li>Enhance user feedback with clear, actionable error and success messages.</li>
+        </ul>
+    </ul>
+
+    <h4>Enhancement 2: Algorithms and Data Structures</h4>
+    <p>
+        The database operations in the Nuoro app, such as retrieving and storing user weight data, were identified as 
+        inefficient and lacking advanced query features like sorting or filtering.
+    </p>
+    <ul>
+        <li><strong>Identified Weaknesses:</strong></li>
+        <ul>
+            <li>Inefficient data retrieval, with no support for sorting or filtering.</li>
+            <li>Lack of input validation for stored weight data, allowing unrealistic values.</li>
+        </ul>
+        <li><strong>Planned Enhancements:</strong></li>
+        <ul>
+            <li>Add sorting and filtering options for user weight data (e.g., by date or weight).</li>
+            <li>Validate weight inputs to ensure they fall within realistic thresholds (1-500 lbs).</li>
+            <li>Refactor database queries to include ORDER BY and WHERE clauses for better data organization.</li>
+        </ul>
     </ul>
 
     <h3>Grazioso Salvare Dashboard</h3>
+    <h4>Enhancement 3: Databases</h4>
+    <p>
+        The Grazioso Salvare Dashboard is a real-time data visualization tool built with Python, MongoDB, and Dash. 
+        It allows users to filter and analyze rescue animal data. While functional, the project had significant 
+        limitations in error handling, query performance, and security.
+    </p>
     <ul>
-        <li><strong>Category 3: Databases</strong>
-            <ul>
-                <li>Planned Enhancements: Structured exception handling, MongoDB indexing, secure credential storage, unit testing.</li>
-            </ul>
-        </li>
+        <li><strong>Identified Weaknesses:</strong></li>
+        <ul>
+            <li>Limited error handling in CRUD operations, leading to poor debugging and reliability.</li>
+            <li>No indexing for frequently queried fields, resulting in slower performance as datasets grow.</li>
+            <li>Hardcoded credentials in the source code, posing a major security risk.</li>
+            <li>Absence of unit tests for CRUD operations, making it difficult to ensure reliability.</li>
+        </ul>
+        <li><strong>Planned Enhancements:</strong></li>
+        <ul>
+            <li>Implement structured exception handling in CRUD methods with centralized error logging.</li>
+            <li>Create MongoDB indexes for frequently queried fields such as breed and location.</li>
+            <li>Replace hardcoded credentials with secure environment variables.</li>
+            <li>Develop comprehensive unit tests for CRUD operations to ensure reliability and scalability.</li>
+        </ul>
     </ul>
 </section>
 
 <section>
     <h2>Script Summary</h2>
-    <p>The review focuses on addressing current limitations, such as input validation, error handling, and query optimization, while demonstrating the alignment of these artifacts with industry best practices and course outcomes.</p>
-    <p>For the Nuoro app, enhancements aim to improve interactivity, usability, and data reliability. For the Grazioso Salvare Dashboard, enhancements focus on database performance, security, and scalability.</p>
+    <p>
+        The code review focused on identifying and addressing weaknesses in two key artifacts:
+        <strong>Nuoro Weight-Tracking Application</strong> and <strong>Grazioso Salvare Dashboard</strong>. These 
+        artifacts were analyzed across three categories: <strong>Software Engineering and Design</strong>, 
+        <strong>Algorithms and Data Structures</strong>, and <strong>Databases</strong>.
+    </p>
+    <ul>
+        <li>
+            <strong>Nuoro Weight-Tracking Application:</strong> Enhancements include improved input validation, 
+            advanced data sorting and filtering, and interactive data visualizations.
+        </li>
+        <li>
+            <strong>Grazioso Salvare Dashboard:</strong> Enhancements focus on optimizing database queries, securing 
+            credentials, and implementing robust error handling and unit testing.
+        </li>
+    </ul>
+    <p>
+        These planned updates demonstrate my ability to critically analyze existing code, implement scalable and 
+        secure solutions, and align development practices with industry standards and course outcomes.
+    </p>
 </section>
 
 <footer>

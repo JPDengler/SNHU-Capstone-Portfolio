@@ -22,63 +22,157 @@
 <section>
     <div class="header-with-button">
         <h2>Overview</h2>
-        <a href="https://github.com/JPDengler/Nuoro-Weight-Management-App" class="repo-button" target="_blank">View Repository</a>
+        <a 
+            href="https://github.com/JPDengler/Nuoro-Weight-Management-App" 
+            class="repo-button" 
+            target="_blank"
+        >
+            View Repository
+        </a>
     </div>
-    <p>The <strong>Nuoro Weight-Tracking App</strong> (on main Branch or Enhancement 2 Branch) was improved to enhance <strong>data visualization, user interactivity, and validation</strong>. This enhancement focused on improving the user experience, ensuring data reliability, and introducing dynamic visual feedback.</p>
+    <p>
+        The <strong>Nuoro Weight-Tracking App</strong> continues to evolve with <strong>Enhancement Two</strong>, 
+        focusing on <strong>Algorithms & Data Structures</strong>. This update improved how users interact with 
+        and organize their data by introducing sorting and filtering functionality, as well as optimizing database 
+        queries for efficiency. The enhancements aim to streamline user experiences and maintain data integrity, 
+        further building on the foundation established in Enhancement One.
+    </p>
+    <p>
+        Users can now sort entries by date and weight, both in ascending and descending orders, and filter entries 
+        using date and weight ranges. These new features ensure that users can quickly find and organize their 
+        data, no matter the size of their dataset.
+    </p>
 </section>
 
 <section>
     <h2>Key Improvements</h2>
     <ul>
-        <li><strong>Sorting Options:</strong> Added functionality to sort weight entries by Date (Ascending/Descending) and Weight (Ascending/Descending).</li>
-        <li><strong>Search Feature:</strong> Allowed filtering of entries by date range and weight range.</li>
-        <li><strong>Optimized Database Queries:</strong> Improved SQLite queries for faster and more efficient retrieval.</li>
-        <li><strong>Bug Fixes:</strong> Resolved issues with disappearing charts and RecyclerView scrolling errors.</li>
+        <li>
+            <strong>Sorting Options:</strong> Added functionality to sort weight entries by 
+            <em>Date</em> (Ascending/Descending) and <em>Weight</em> (Ascending/Descending).
+        </li>
+        <li>
+            <strong>Search Feature:</strong> Allowed users to filter entries based on a specific 
+            <em>date range</em> or <em>weight range</em>, providing quick access to relevant data.
+        </li>
+        <li>
+            <strong>Optimized Database Queries:</strong> Enhanced SQLite queries using 
+            <code>ORDER BY</code> and <code>WHERE</code> clauses to improve retrieval speeds.
+        </li>
+        <li>
+            <strong>Bug Fixes:</strong> Resolved issues with disappearing charts during sorting 
+            and fixed RecyclerView scrolling errors for large datasets.
+        </li>
     </ul>
 </section>
 
 <section>
     <h2>Technical Implementation</h2>
-    <p>The implementation involved changes to the following areas:</p>
+    <p>The following changes were implemented to bring these features to life:</p>
     <ul>
-        <li>Modified the <code>DatabaseHelper</code> class to support sorting and searching capabilities using SQL queries.</li>
-        <li>Enhanced the <code>DataDisplayActivity</code> to integrate user input for sorting and filtering functionality.</li>
-        <li>Refactored the graphing logic to dynamically update based on sorting and filtering operations.</li>
-        <li>Introduced input validation to ensure that users enter valid date ranges and weight thresholds.</li>
-        <li>Fixed RecyclerView scrolling bugs to ensure all entries are viewable regardless of dataset size.</li>
+        <li>
+            <strong>DatabaseHelper:</strong> Refactored to include new methods for sorting and 
+            searching weight entries using optimized SQL queries.
+        </li>
+        <li>
+            <strong>DataDisplayActivity:</strong> Enhanced UI components to support sorting 
+            and filtering functionality based on user input.
+        </li>
+        <li>
+            <strong>Dynamic Graph Updates:</strong> Refactored graphing logic to dynamically 
+            reflect sorting and filtering results.
+        </li>
+        <li>
+            <strong>Input Validation:</strong> Added checks to ensure users enter valid 
+            date ranges and weight thresholds for filtering operations.
+        </li>
+        <li>
+            <strong>Bug Fixes:</strong> Resolved RecyclerView scrolling and chart rendering 
+            issues, ensuring smooth user interactions.
+        </li>
     </ul>
 </section>
 
+<a id="screenshots"></a>
 <section>
     <h2>Screenshots</h2>
     <div class="screenshot-container">
         <figure>
             <figcaption>Sort by Date (Ascending)</figcaption>
-            <img src="images/Sort by Date A.png" alt="Sort by Date Ascending">
+            <a href="#lightbox-date-asc">
+                <img src="images/Sort by Date A.png" alt="Sort by Date Ascending">
+            </a>
         </figure>
         <figure>
             <figcaption>Sort by Date (Descending)</figcaption>
-            <img src="images/Sort by Date D.png" alt="Sort by Date Descending">
+            <a href="#lightbox-date-desc">
+                <img src="images/Sort by Date D.png" alt="Sort by Date Descending">
+            </a>
         </figure>
         <figure>
             <figcaption>Sort by Weight (Ascending)</figcaption>
-            <img src="images/Sort by Weight A.png" alt="Sort by Weight Ascending">
+            <a href="#lightbox-weight-asc">
+                <img src="images/Sort by Weight A.png" alt="Sort by Weight Ascending">
+            </a>
         </figure>
         <figure>
             <figcaption>Sort by Weight (Descending)</figcaption>
-            <img src="images/Sort by Weight D.png" alt="Sort by Weight Descending">
+            <a href="#lightbox-weight-desc">
+                <img src="images/Sort by Weight D.png" alt="Sort by Weight Descending">
+            </a>
         </figure>
         <figure>
             <figcaption>Search & List</figcaption>
-            <img src="images/List.png" alt="Search & List">
+            <a href="#lightbox-search-list">
+                <img src="images/List.png" alt="Search & List">
+            </a>
         </figure>
         <figure>
             <figcaption>Input Validation</figcaption>
-            <img src="images/Invalid Weight Dialog.png" alt="Input Validation">
+            <a href="#lightbox-validation">
+                <img src="images/Invalid Weight Dialog.png" alt="Input Validation">
+            </a>
         </figure>
     </div>
-</section>
 
+    <!-- Lightbox Modals -->
+    <div id="lightbox-date-asc" class="lightbox">
+        <div class="lightbox-content">
+            <img src="images/Sort by Date A.png" alt="Sort by Date Ascending">
+            <a href="#screenshots" class="close-button">×</a>
+        </div>
+    </div>
+    <div id="lightbox-date-desc" class="lightbox">
+        <div class="lightbox-content">
+            <img src="images/Sort by Date D.png" alt="Sort by Date Descending">
+            <a href="#screenshots" class="close-button">×</a>
+        </div>
+    </div>
+    <div id="lightbox-weight-asc" class="lightbox">
+        <div class="lightbox-content">
+            <img src="images/Sort by Weight A.png" alt="Sort by Weight Ascending">
+            <a href="#screenshots" class="close-button">×</a>
+        </div>
+    </div>
+    <div id="lightbox-weight-desc" class="lightbox">
+        <div class="lightbox-content">
+            <img src="images/Sort by Weight D.png" alt="Sort by Weight Descending">
+            <a href="#screenshots" class="close-button">×</a>
+        </div>
+    </div>
+    <div id="lightbox-search-list" class="lightbox">
+        <div class="lightbox-content">
+            <img src="images/List.png" alt="Search & List">
+            <a href="#screenshots" class="close-button">×</a>
+        </div>
+    </div>
+    <div id="lightbox-validation" class="lightbox">
+        <div class="lightbox-content">
+            <img src="images/Invalid Weight Dialog.png" alt="Input Validation">
+            <a href="#screenshots" class="close-button">×</a>
+        </div>
+    </div>
+</section>
 
 <footer>
     &copy; 2025 Joseph Dengler | <a href="index.html">Back to Home</a>

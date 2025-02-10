@@ -22,70 +22,189 @@
 <section>
     <div class="header-with-button">
         <h2>Overview</h2>
-        <a href="https://github.com/JPDengler/Nuoro-Weight-Management-App/tree/Enhancement-One" class="repo-button" target="_blank">View Repository</a>
+        <a 
+            href="https://github.com/JPDengler/Nuoro-Weight-Management-App/tree/Enhancement-One" 
+            class="repo-button" 
+            target="_blank"
+        >
+            View Repository
+        </a>
     </div>
-    <p>The <strong>Nuoro Weight-Tracking App</strong> (on Enhancement One branch) was improved to enhance <strong>data visualization, user interactivity, and validation</strong>. This enhancement focused on improving the user experience, ensuring data reliability, and introducing dynamic visual feedback.</p>
+    <p>
+        The <strong>Nuoro Weight-Tracking App</strong> is a mobile application designed to 
+        help users track their weight, set personal goals, and visualize progress over time. 
+        Developed originally in CS-360: Mobile Architect & Programming, the app underwent 
+        significant upgrades in <strong>Enhancement One</strong> as part of the 
+        <strong>CS-499: Computer Science Capstone</strong>.
+    </p>
+    <p>
+        These enhancements focused on implementing industry-standard solutions, improving 
+        user interactivity, and ensuring secure, reliable data handling. Major improvements 
+        included integrating <strong>RecyclerView</strong> for dynamic data management, 
+        <strong>MPAndroidChart</strong> for graphical data visualization, and addressing 
+        SMS permission handling for secure notifications.
+    </p>
 </section>
 
 <section>
     <h2>Key Improvements</h2>
     <ul>
-        <li><strong>Input Validation:</strong> Ensured valid date format (MM/DD/YY) and weight range (1-500 lbs).</li>
-        <li><strong>Interactive Data Management:</strong> Replaced static text with a RecyclerView supporting edit and delete actions.</li>
-        <li><strong>Data Visualization:</strong> Integrated MPAndroidChart for dynamic weight trend visualization.</li>
-        <li><strong>Improved SMS Permissions:</strong> Fixed broken request flow for handling permissions correctly.</li>
-        <li><strong>User Feedback Enhancements:</strong> Added error messages, confirmation dialogs, and success indicators.</li>
-        <li><strong>Database Enhancements:</strong> Refactored DatabaseHelper to support real-time updates.</li>
-        <li><strong>Goal Weight Management:</strong> Displayed goal weight on the graph for easy tracking.</li>
+        <li>
+            <strong>Input Validation:</strong> Ensured valid date format (MM/DD/YY) and weight 
+            range (1-500 lbs) to maintain data integrity.
+        </li>
+        <li>
+            <strong>Interactive Data Management:</strong> Replaced static TextView with 
+            RecyclerView to allow users to edit and delete individual weight entries.
+        </li>
+        <li>
+            <strong>Data Visualization:</strong> Integrated MPAndroidChart to dynamically 
+            display weight trends with a goal weight marker.
+        </li>
+        <li>
+            <strong>Improved SMS Permissions:</strong> Fixed broken request flows, ensuring 
+            proper handling of Android's permission model.
+        </li>
+        <li>
+            <strong>User Feedback Enhancements:</strong> Added detailed feedback for actions, 
+            including success messages, error dialogs, and confirmation prompts.
+        </li>
+        <li>
+            <strong>Database Enhancements:</strong> Refactored DatabaseHelper for real-time 
+            updates and robust error handling.
+        </li>
+        <li>
+            <strong>Goal Weight Management:</strong> Validated goal weight inputs and 
+            displayed the goal weight on the trend chart.
+        </li>
     </ul>
 </section>
 
 <section>
     <h2>Technical Implementation</h2>
-    <p>The implementation involved several key changes:</p>
+    <p>The following changes were implemented to enhance the app:</p>
     <ul>
-        <li>Refactored the <code>DatabaseHelper</code> class to include input validation and real-time data updates.</li>
-        <li>Integrated MPAndroidChart to visualize weight trends dynamically.</li>
-        <li>Enhanced RecyclerView for better data presentation with edit/delete actions.</li>
-        <li>Improved feedback mechanisms such as error messages and confirmation dialogs.</li>
+        <li>
+            Refactored the <code>DatabaseHelper</code> class to validate inputs and handle 
+            real-time updates for a smoother user experience.
+        </li>
+        <li>
+            Integrated MPAndroidChart to provide a dynamic and visually appealing way to 
+            track weight progress over time.
+        </li>
+        <li>
+            Enhanced the RecyclerView to support intuitive data management with edit and 
+            delete actions, making the app more interactive.
+        </li>
+        <li>
+            Implemented detailed user feedback mechanisms, including error messages and 
+            success notifications, to enhance usability.
+        </li>
     </ul>
 </section>
 
+<a id="screenshots"></a>
 <section>
     <h2>Screenshots</h2>
     <div class="screenshot-container">
         <figure>
             <figcaption>Login Screen</figcaption>
-            <img src="images/Login Page.png" alt="Login Screen">
+            <a href="#lightbox-login">
+                <img src="images/Login Page.png" alt="Login Screen">
+            </a>
         </figure>
         <figure>
             <figcaption>SMS Permission Request</figcaption>
-            <img src="images/SMS Request.png" alt="SMS Permission Request">
+            <a href="#lightbox-sms">
+                <img src="images/SMS Request.png" alt="SMS Permission Request">
+            </a>
         </figure>
         <figure>
             <figcaption>Account Creation</figcaption>
-            <img src="images/Create Account Popup.png" alt="Account Creation">
+            <a href="#lightbox-account">
+                <img src="images/Create Account Popup.png" alt="Account Creation">
+            </a>
         </figure>
         <figure>
             <figcaption>Initial Data Display</figcaption>
-            <img src="images/DataDisplayInitial.png" alt="Initial Data Display">
+            <a href="#lightbox-data">
+                <img src="images/DataDisplayInitial.png" alt="Initial Data Display">
+            </a>
         </figure>
         <figure>
             <figcaption>Edit Entry Dialog</figcaption>
-            <img src="images/Edit Entry.png" alt="Edit Entry Dialog">
+            <a href="#lightbox-edit">
+                <img src="images/Edit Entry.png" alt="Edit Entry Dialog">
+            </a>
         </figure>
         <figure>
             <figcaption>Delete Entry Confirmation</figcaption>
-            <img src="images/Delete Entry.png" alt="Delete Entry Confirmation">
+            <a href="#lightbox-delete">
+                <img src="images/Delete Entry.png" alt="Delete Entry Confirmation">
+            </a>
         </figure>
         <figure>
             <figcaption>Goal Weight Entry</figcaption>
-            <img src="images/Goal Weight.png" alt="Goal Weight Entry">
+            <a href="#lightbox-goal">
+                <img src="images/Goal Weight.png" alt="Goal Weight Entry">
+            </a>
         </figure>
         <figure>
             <figcaption>Clear All Data Confirmation</figcaption>
-            <img src="images/Clear All Data.png" alt="Clear All Data Confirmation">
+            <a href="#lightbox-clear">
+                <img src="images/Clear All Data.png" alt="Clear All Data Confirmation">
+            </a>
         </figure>
+    </div>
+
+    <!-- Lightbox Modals -->
+    <div id="lightbox-login" class="lightbox">
+        <div class="lightbox-content">
+            <img src="images/Login Page.png" alt="Login Screen">
+            <a href="#screenshots" class="close-button">×</a>
+        </div>
+    </div>
+    <div id="lightbox-sms" class="lightbox">
+        <div class="lightbox-content">
+            <img src="images/SMS Request.png" alt="SMS Permission Request">
+            <a href="#screenshots" class="close-button">×</a>
+        </div>
+    </div>
+    <div id="lightbox-account" class="lightbox">
+        <div class="lightbox-content">
+            <img src="images/Create Account Popup.png" alt="Account Creation">
+            <a href="#screenshots" class="close-button">×</a>
+        </div>
+    </div>
+    <div id="lightbox-data" class="lightbox">
+        <div class="lightbox-content">
+            <img src="images/DataDisplayInitial.png" alt="Initial Data Display">
+            <a href="#screenshots" class="close-button">×</a>
+        </div>
+    </div>
+    <div id="lightbox-edit" class="lightbox">
+        <div class="lightbox-content">
+            <img src="images/Edit Entry.png" alt="Edit Entry Dialog">
+            <a href="#screenshots" class="close-button">×</a>
+        </div>
+    </div>
+    <div id="lightbox-delete" class="lightbox">
+        <div class="lightbox-content">
+            <img src="images/Delete Entry.png" alt="Delete Entry Confirmation">
+            <a href="#screenshots" class="close-button">×</a>
+        </div>
+    </div>
+    <div id="lightbox-goal" class="lightbox">
+        <div class="lightbox-content">
+            <img src="images/Goal Weight.png" alt="Goal Weight Entry">
+            <a href="#screenshots" class="close-button">×</a>
+        </div>
+    </div>
+    <div id="lightbox-clear" class="lightbox">
+        <div class="lightbox-content">
+            <img src="images/Clear All Data.png" alt="Clear All Data Confirmation">
+            <a href="#screenshots" class="close-button">×</a>
+        </div>
     </div>
 </section>
 

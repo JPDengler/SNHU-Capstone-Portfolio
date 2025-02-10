@@ -22,93 +22,160 @@
 <section>
     <div class="header-with-button">
         <h2>Overview</h2>
-        <a href="https://github.com/JPDengler/Client-Server-Development-CS-340-Database-Enhancement" class="repo-button" target="_blank">View Repository</a>
+        <a 
+            href="https://github.com/JPDengler/Client-Server-Development-CS-340-Database-Enhancement" 
+            class="repo-button" 
+            target="_blank"
+        >
+            View Repository
+        </a>
     </div>
-    <p>The <strong>Grazioso Salvare Dashboard</strong> (on main branch) was enhanced to improve <strong>data management, query performance, and application reliability</strong>. These enhancements addressed security vulnerabilities, performance bottlenecks, and testing gaps to deliver a secure, efficient, and robust database solution.</p>
+    <p>
+        The <strong>Grazioso Salvare Dashboard</strong> is a data-driven web application designed for animal 
+        rescue organizations, providing tools for filtering, visualizing, and managing rescue animal data. 
+        Initially, the system faced challenges in query efficiency, error handling, security, and testing.
+    </p>
+    <p>
+        <strong>Enhancement Three</strong> focuses on improving the reliability, scalability, and security of 
+        the application by introducing optimized database queries, structured error management, secure credential 
+        handling, and comprehensive unit testing. These updates align with industry best practices for robust 
+        database solutions and enhance the overall user experience.
+    </p>
 </section>
 
 <section>
     <h2>Key Improvements</h2>
     <ul>
-        <li><strong>Error Handling:</strong> Implemented structured exception handling in CRUD methods to improve reliability and debugging.</li>
-        <li><strong>Query Optimization:</strong> Added MongoDB indexes for commonly queried fields, such as breed and location, to enhance performance.</li>
-        <li><strong>Secure Credential Storage:</strong> Replaced hardcoded credentials with environment variables to improve security.</li>
-        <li><strong>Documentation:</strong> Enhanced inline comments and created a detailed guide for MongoDB queries and operations.</li>
-        <li><strong>Unit Testing:</strong> Developed comprehensive unit tests to validate CRUD operations and ensure database reliability.</li>
+        <li>
+            <strong>Error Handling:</strong> Structured exception handling was implemented in CRUD methods 
+            to improve debugging and ensure application reliability.
+        </li>
+        <li>
+            <strong>Query Optimization:</strong> MongoDB indexes were added for commonly queried fields 
+            (e.g., breed, location) to enhance performance and scalability.
+        </li>
+        <li>
+            <strong>Secure Credential Storage:</strong> Hardcoded credentials were replaced with environment 
+            variables for secure authentication and easier management.
+        </li>
+        <li>
+            <strong>Documentation:</strong> Inline comments and a detailed guide for MongoDB queries and 
+            CRUD operations were added to improve maintainability.
+        </li>
+        <li>
+            <strong>Unit Testing:</strong> Comprehensive unit tests were developed to validate create, read, 
+            update, and delete operations, ensuring database reliability.
+        </li>
     </ul>
 </section>
 
 <section>
     <h2>Technical Implementation</h2>
-    <p>The following technical changes were made to the Grazioso Salvare Dashboard:</p>
+    <p>The following technical changes were made as part of this enhancement:</p>
     <ul>
-        <li>Refactored the <code>AnimalShelter</code> class to handle database exceptions and log errors.</li>
-        <li>Created MongoDB indexes to optimize commonly used queries, reducing response times for dashboard updates.</li>
-        <li>Replaced sensitive hardcoded credentials with environment variables for secure credential management.</li>
-        <li>Documented MongoDB query structures and CRUD operations to support future development and onboarding.</li>
-        <li>Designed and implemented unit tests for create, read, update, and delete operations to validate functionality.</li>
+        <li>
+            <strong>Refactored AnimalShelter Class:</strong> Added error handling to log database exceptions 
+            and prevent runtime failures.
+        </li>
+        <li>
+            <strong>Created MongoDB Indexes:</strong> Optimized commonly queried fields, reducing response 
+            times and improving dashboard performance.
+        </li>
+        <li>
+            <strong>Credential Management:</strong> Replaced hardcoded credentials with environment variables 
+            using Python’s <code>os.getenv()</code>, enhancing security and maintainability.
+        </li>
+        <li>
+            <strong>Documentation:</strong> Documented MongoDB query structures and CRUD operations to assist 
+            future developers and simplify onboarding.
+        </li>
+        <li>
+            <strong>Unit Testing:</strong> Designed unit tests to validate CRUD functionality, using a 
+            separate test collection to avoid interfering with production data.
+        </li>
     </ul>
 </section>
 
+<a id="screenshots"></a>
 <section>
     <h2>Screenshots</h2>
-    <h3>Enhancement 3 Screenshots</h3>
-    <div class="screenshots-grid">
+    <div class="screenshot-container">
         <figure>
-            <img src="images/enhancement3/Dash_Filter.png" alt="Dashboard filtering in action" style="width: 300px; height: auto;">
             <figcaption>Dashboard filtering in action</figcaption>
+            <a href="#lightbox-filter">
+                <img src="images/enhancement3/Dash_Filter.png" alt="Dashboard filtering in action">
+            </a>
         </figure>
         <figure>
-            <img src="images/enhancement3/Dash_Modules.png" alt="Enhanced dashboard integration" style="width: 300px; height: auto;">
             <figcaption>Enhanced dashboard integration</figcaption>
+            <a href="#lightbox-modules">
+                <img src="images/enhancement3/Dash_Modules.png" alt="Enhanced dashboard integration">
+            </a>
         </figure>
         <figure>
-            <img src="images/enhancement3/Indexes.png" alt="MongoDB indexes for query optimization" style="width: 300px; height: auto;">
             <figcaption>MongoDB indexes for query optimization</figcaption>
+            <a href="#lightbox-indexes">
+                <img src="images/enhancement3/Indexes.png" alt="MongoDB indexes for query optimization">
+            </a>
         </figure>
         <figure>
-            <img src="images/enhancement3/Log.png" alt="Centralized error logging" style="width: 300px; height: auto;">
             <figcaption>Centralized error logging</figcaption>
+            <a href="#lightbox-log">
+                <img src="images/enhancement3/Log.png" alt="Centralized error logging">
+            </a>
         </figure>
         <figure>
-            <img src="images/enhancement3/Test_Crud.png" alt="Unit tests for CRUD operations" style="width: 300px; height: auto;">
             <figcaption>Unit tests for CRUD operations</figcaption>
+            <a href="#lightbox-crud">
+                <img src="images/enhancement3/Test_Crud.png" alt="Unit tests for CRUD operations">
+            </a>
         </figure>
         <figure>
-            <img src="images/enhancement3/User_Pass.png" alt="Environment variable-based credential storage" style="width: 300px; height: auto;">
             <figcaption>Environment variable-based credential storage</figcaption>
-        </figure>
-        <figure>
-            <img src="images/enhancement3/User_Pass_Global.png" alt="Global credential setup validation" style="width: 300px; height: auto;">
-            <figcaption>Global credential setup validation</figcaption>
+            <a href="#lightbox-credentials">
+                <img src="images/enhancement3/User_Pass.png" alt="Environment variable-based credential storage">
+            </a>
         </figure>
     </div>
 
-    <h3>Project 2 Screenshots</h3>
-    <div class="screenshots-grid">
-        <figure>
-            <img src="images/enhancement3/Disaster.png" alt="Dashboard filter: Disaster" style="width: 300px; height: auto;">
-            <figcaption>Dashboard filter: Disaster</figcaption>
-        </figure>
-        <figure>
-            <img src="images/enhancement3/Mountain.png" alt="Dashboard filter: Mountain" style="width: 300px; height: auto;">
-            <figcaption>Dashboard filter: Mountain</figcaption>
-        </figure>
-        <figure>
-            <img src="images/enhancement3/Reset.png" alt="Dashboard filter: Reset" style="width: 300px; height: auto;">
-            <figcaption>Dashboard filter: Reset</figcaption>
-        </figure>
-        <figure>
-            <img src="images/enhancement3/Startup.png" alt="Dashboard filter: Startup" style="width: 300px; height: auto;">
-            <figcaption>Dashboard filter: Startup</figcaption>
-        </figure>
-        <figure>
-            <img src="images/enhancement3/Water.png" alt="Dashboard filter: Water" style="width: 300px; height: auto;">
-            <figcaption>Dashboard filter: Water</figcaption>
-        </figure>
+    <!-- Lightbox Modals -->
+    <div id="lightbox-filter" class="lightbox">
+        <div class="lightbox-content">
+            <img src="images/enhancement3/Dash_Filter.png" alt="Dashboard filtering in action">
+            <a href="#screenshots" class="close-button">×</a>
+        </div>
+    </div>
+    <div id="lightbox-modules" class="lightbox">
+        <div class="lightbox-content">
+            <img src="images/enhancement3/Dash_Modules.png" alt="Enhanced dashboard integration">
+            <a href="#screenshots" class="close-button">×</a>
+        </div>
+    </div>
+    <div id="lightbox-indexes" class="lightbox">
+        <div class="lightbox-content">
+            <img src="images/enhancement3/Indexes.png" alt="MongoDB indexes for query optimization">
+            <a href="#screenshots" class="close-button">×</a>
+        </div>
+    </div>
+    <div id="lightbox-log" class="lightbox">
+        <div class="lightbox-content">
+            <img src="images/enhancement3/Log.png" alt="Centralized error logging">
+            <a href="#screenshots" class="close-button">×</a>
+        </div>
+    </div>
+    <div id="lightbox-crud" class="lightbox">
+        <div class="lightbox-content">
+            <img src="images/enhancement3/Test_Crud.png" alt="Unit tests for CRUD operations">
+            <a href="#screenshots" class="close-button">×</a>
+        </div>
+    </div>
+    <div id="lightbox-credentials" class="lightbox">
+        <div class="lightbox-content">
+            <img src="images/enhancement3/User_Pass.png" alt="Environment variable-based credential storage">
+            <a href="#screenshots" class="close-button">×</a>
+        </div>
     </div>
 </section>
-
 
 <footer>
     &copy; 2025 Joseph Dengler | <a href="index.html">Back to Home</a>
