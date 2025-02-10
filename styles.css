@@ -13,15 +13,17 @@ header {
     color: var(--text-color); /* Text color remains consistent */
     padding: 20px;
     text-align: center;
+    font-family: OCR A Std, monospace;
 }
 
 /* Header Styles */
 header h1, section h2, .enhancement h3, .section-header {
     color: #ff7900; /* Vibrant orange for headers */
     font-size: 1.8em; /* Slightly larger for h1 */
+    font-family: OCR A Std, monospace;
     text-align: center;
     margin-top: 20px;
-    text-shadow: 13px 10px 10px rgb(51, 51, 51);
+    text-shadow: 5px 5px 15px rgb(0, 0, 0);
     margin-bottom: 10px;
 }
 
