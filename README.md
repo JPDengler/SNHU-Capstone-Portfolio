@@ -5,7 +5,7 @@ The SNHU CS-499 Capstone Portfolio highlights two projects that demonstrate my e
 
 ---
 
-## Projects
+## Artifacts
 
 ### **Nuoro Weight Management App**
 The **Nuoro Weight Management App** is an Android-based mobile application designed to help users track their weight, set goals, and analyze progress through data visualization. Originally developed in **CS-360: Mobile Architect & Programming**, it focuses on providing an intuitive user experience for personal weight management.
