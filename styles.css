@@ -375,13 +375,13 @@ code {
 .welcome-container {
     display: flex;
     align-items: center;
-    gap: 20px; /* Space between image and text */
+    gap: 20px; 
 }
 
 .profile-pic {
-    width: 120px; /* Adjust size as needed */
+    width: 120px;
     height: 120px;
-    border-radius: 50%; /* Makes it circular */
+    border-radius: 50%; 
     border: 2px solid #ff5e00;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
@@ -401,10 +401,62 @@ code {
     text-align: justify;
 }
 
-/* Paragraph Styling */
-.self-assessment p {
-    font-size: 1.2em;
-    line-height: 1.6;
+/* Professional Self-Assessment Styling */
+.professional-self-assessment {
+    background-color: #272727; /* Match Welcome tile */
+    border: 2px solid #a83e00; /* Match orange border */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 900px; /* Align width with Welcome tile */
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Title Formatting */
+.professional-self-assessment h2 {
+    font-size: 2.5em; /* Match Welcome size */
+    color: #ff5e00; /* Orange header */
+    font-weight: bold;
     margin-bottom: 10px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Body Text */
+.professional-self-assessment p {
+    font-size: 1.2em; /* Match Welcome text */
+    color: #c9c7c3; /* Light gray */
     text-align: justify;
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 15px;
+}
+
+/* Key Competencies Section */
+.professional-self-assessment h3 {
+    font-size: 1.8em;
+    color: #ff5e00; /* Orange for section headers */
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* Subheadings */
+.professional-self-assessment h4 {
+    font-size: 1.5em;
+    color: #c9c7c3;
+    margin-top: 15px;
+    text-align: left;
+}
+
+/* Bullet Points */
+.professional-self-assessment ul {
+    text-align: left;
+    font-size: 1.2em;
+    color: #c9c7c3;
+    padding-left: 20px;
+}
+
+.professional-self-assessment li {
+    margin-bottom: 8px;
 }
