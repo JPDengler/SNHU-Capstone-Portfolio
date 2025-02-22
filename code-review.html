@@ -54,81 +54,72 @@
 <section class="code-review">
     <h2>Highlights from the Code Review</h2>
 
-    <h3>Nuoro Weight-Tracking Application</h3>
+    <div class="review-category">
+        <h3>Nuoro Weight-Tracking Application</h3>
 
-    <h4>Enhancement 1: Software Engineering and Design</h4>
-    <p>
-        The Nuoro app allows users to log weight data, set goals, and receive SMS notifications. However, several limitations 
-        were identified, including minimal input validation, poor user feedback, and limited interactivity.
-    </p>
-    
-    <ul>
-        <li><strong>Identified Weaknesses:</strong>
+        <div class="review-subcategory">
+            <h4>Enhancement 1: Software Engineering and Design</h4>
+            <p>The Nuoro app allows users to log weight data, set goals, and receive SMS notifications. However, several limitations were identified, including minimal input validation, poor user feedback, and limited interactivity.</p>
             <ul>
-                <li>Lack of validation for login credentials, dates, and weight inputs.</li>
-                <li>Generic error messages, providing insufficient feedback to users.</li>
-                <li>Plain text data display, with no interactivity for managing entries.</li>
+                <li><strong>Identified Weaknesses:</strong></li>
+                <ul>
+                    <li>Lack of validation for login credentials, dates, and weight inputs.</li>
+                    <li>Generic error messages, providing insufficient feedback to users.</li>
+                    <li>Plain text data display, with no interactivity for managing entries.</li>
+                </ul>
+                <li><strong>Planned Enhancements:</strong></li>
+                <ul>
+                    <li>Implement input validation to ensure proper data format and realistic values.</li>
+                    <li>Replace static TextView with a RecyclerView for interactive data management.</li>
+                    <li>Integrate MPAndroidChart for dynamic weight trend visualization.</li>
+                    <li>Enhance user feedback with clear, actionable error and success messages.</li>
+                </ul>
             </ul>
-        </li>
-        <li><strong>Planned Enhancements:</strong>
-            <ul>
-                <li>Implement input validation to ensure proper data format and realistic values.</li>
-                <li>Replace static TextView with a RecyclerView for interactive data management.</li>
-                <li>Integrate MPAndroidChart for dynamic weight trend visualization.</li>
-                <li>Enhance user feedback with clear, actionable error and success messages.</li>
-            </ul>
-        </li>
-    </ul>
+        </div>
 
-    <h4>Enhancement 2: Algorithms and Data Structures</h4>
-    <p>
-        The database operations in the Nuoro app, such as retrieving and storing user weight data, were identified as 
-        inefficient and lacking advanced query features like sorting or filtering.
-    </p>
-    
-    <ul>
-        <li><strong>Identified Weaknesses:</strong>
+        <div class="review-subcategory">
+            <h4>Enhancement 2: Algorithms and Data Structures</h4>
+            <p>The database operations in the Nuoro app, such as retrieving and storing user weight data, were identified as inefficient and lacking advanced query features like sorting or filtering.</p>
             <ul>
-                <li>Inefficient data retrieval, with no support for sorting or filtering.</li>
-                <li>Lack of input validation for stored weight data, allowing unrealistic values.</li>
+                <li><strong>Identified Weaknesses:</strong></li>
+                <ul>
+                    <li>Inefficient data retrieval, with no support for sorting or filtering.</li>
+                    <li>Lack of input validation for stored weight data, allowing unrealistic values.</li>
+                </ul>
+                <li><strong>Planned Enhancements:</strong></li>
+                <ul>
+                    <li>Add sorting and filtering options for user weight data (e.g., by date or weight).</li>
+                    <li>Validate weight inputs to ensure they fall within realistic thresholds (1-500 lbs).</li>
+                    <li>Refactor database queries to include ORDER BY and WHERE clauses for better data organization.</li>
+                </ul>
             </ul>
-        </li>
-        <li><strong>Planned Enhancements:</strong>
-            <ul>
-                <li>Add sorting and filtering options for user weight data (e.g., by date or weight).</li>
-                <li>Validate weight inputs to ensure they fall within realistic thresholds (1-500 lbs).</li>
-                <li>Refactor database queries to include ORDER BY and WHERE clauses for better data organization.</li>
-            </ul>
-        </li>
-    </ul>
+        </div>
+    </div>
 
-    <h3>Grazioso Salvare Dashboard</h3>
+    <div class="review-category">
+        <h3>Grazioso Salvare Dashboard</h3>
 
-    <h4>Enhancement 3: Databases</h4>
-    <p>
-        The Grazioso Salvare Dashboard is a real-time data visualization tool built with Python, MongoDB, and Dash. 
-        It allows users to filter and analyze rescue animal data. While functional, the project had significant 
-        limitations in error handling, query performance, and security.
-    </p>
-    
-    <ul>
-        <li><strong>Identified Weaknesses:</strong>
+        <div class="review-subcategory">
+            <h4>Enhancement 3: Databases</h4>
+            <p>The Grazioso Salvare Dashboard is a real-time data visualization tool built with Python, MongoDB, and Dash. It allows users to filter and analyze rescue animal data. While functional, the project had significant limitations in error handling, query performance, and security.</p>
             <ul>
-                <li>Limited error handling in CRUD operations, leading to poor debugging and reliability.</li>
-                <li>No indexing for frequently queried fields, resulting in slower performance as datasets grow.</li>
-                <li>Hardcoded credentials in the source code, posing a major security risk.</li>
-                <li>Absence of unit tests for CRUD operations, making it difficult to ensure reliability.</li>
+                <li><strong>Identified Weaknesses:</strong></li>
+                <ul>
+                    <li>Limited error handling in CRUD operations, leading to poor debugging and reliability.</li>
+                    <li>No indexing for frequently queried fields, resulting in slower performance as datasets grow.</li>
+                    <li>Hardcoded credentials in the source code, posing a major security risk.</li>
+                    <li>Absence of unit tests for CRUD operations, making it difficult to ensure reliability.</li>
+                </ul>
+                <li><strong>Planned Enhancements:</strong></li>
+                <ul>
+                    <li>Implement structured exception handling in CRUD methods with centralized error logging.</li>
+                    <li>Create MongoDB indexes for frequently queried fields such as breed and location.</li>
+                    <li>Replace hardcoded credentials with secure environment variables.</li>
+                    <li>Develop comprehensive unit tests for CRUD operations to ensure reliability and scalability.</li>
+                </ul>
             </ul>
-        </li>
-        <li><strong>Planned Enhancements:</strong>
-            <ul>
-                <li>Implement structured exception handling in CRUD methods with centralized error logging.</li>
-                <li>Create MongoDB indexes for frequently queried fields such as breed and location.</li>
-                <li>Replace hardcoded credentials with secure environment variables.</li>
-                <li>Develop comprehensive unit tests for CRUD operations to ensure reliability and scalability.</li>
-            </ul>
-        </li>
-    </ul>
+        </div>
+    </div>
 </section>
 
 <section class="script-summary">
