@@ -403,20 +403,20 @@ code {
 
 /* Professional Self-Assessment Styling */
 .professional-self-assessment {
-    background-color: #272727; /* Match Welcome tile */
-    border: 2px solid #a83e00; /* Match orange border */
+    background-color: #272727; 
+    border: 2px solid #a83e00; 
     padding: 20px;
     border-radius: 8px;
     margin: 20px auto;
-    max-width: 900px; /* Align width with Welcome tile */
+    max-width: 900px; 
     text-align: center;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Title Formatting */
 .professional-self-assessment h2 {
-    font-size: 2.5em; /* Match Welcome size */
-    color: #ff5e00; /* Orange header */
+    font-size: 2.5em; 
+    color: #ff5e00; 
     font-weight: bold;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -425,17 +425,17 @@ code {
 
 /* Body Text */
 .professional-self-assessment p {
-    font-size: 1.2em; /* Match Welcome text */
-    color: #c9c7c3; /* Light gray */
+    font-size: 1.2em; 
+    color: #c9c7c3; 
     text-align: justify;
-    line-height: 1.6; /* Improve readability */
+    line-height: 1.6; 
     margin-bottom: 15px;
 }
 
 /* Key Competencies Section */
 .professional-self-assessment h3 {
     font-size: 1.8em;
-    color: #ff5e00; /* Orange for section headers */
+    color: #ff5e00; 
     font-weight: bold;
     margin-top: 20px;
     text-align: left;
