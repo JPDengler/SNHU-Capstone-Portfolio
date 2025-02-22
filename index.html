@@ -9,8 +9,8 @@
 <body>
 
 <header>
-    <h1>SNHU Capstone Portfolio</h1>
-    <p>Joseph Dengler</p>
+    <h1>Capstone Portfolio</h1>
+    <p>SNHU - Joseph Dengler - 2025</p>
 </header>
 
 <nav>
@@ -21,19 +21,119 @@
     <a href="code-review.html">Code Review</a>
 </nav>
 
-<section>
-    <h2>Welcome!</h2>
-    <p>This portfolio showcases my capstone projects for CS-499 at Southern New Hampshire University.</p>
+<section class="welcome-section">
+    <div class="welcome-container">
+        <img src="images/profile-pic.png" alt="Joseph Dengler" class="profile-pic">
+        <div class="welcome-text">
+            <h2>Welcome!</h2>
+            <p>
+                My name is Joseph Dengler, and I am a developer - automation technician with a background in IIoT, embedded 
+                systems, and programming. This portfolio showcases my capstone work for CS-499 at Southern New Hampshire University, 
+                where I have applied my expertise in software engineering, data structures, and database management to enhance 
+                real-world applications. Throughout this project, I refined two key artifacts—Nuoro Weight-Tracking App and 
+                Grazioso Salvare Dashboard—by improving code quality, optimizing performance, and implementing 
+                best practices in secure development throughout three enhancement projects. Explore the enhancements to see how 
+                each application was improved to meet industry standards.
+            </p>
+        </div>
+    </div>
 </section>
+
+<section class="self-assessment">
+    <h2>Professional Self-Assessment</h2>
+
+    <p>
+        Throughout my coursework in the Computer Science with concentration in Software Engineering Undergraduate program at 
+        Southern New Hampshire University, I have developed a comprehensive understanding of key computing principles and 
+        industry best practices. Completing this capstone project and assembling another ePortfolio that strictly reflects 
+        my studies here at SNHU. My Professional portfolio can be found here [] which includes many of my projects from work,
+        SNHU, and just having fun! This portfolio highlights my ability to design, implement, and enhance real-world applications 
+        while emphasizing efficiency, security, and scalability.
+    </p>
+
+    <p>
+        My experience in the program has strengthened my problem-solving skills, structured thinking, and ability to 
+        work within collaborative development environments. Each project built upon the last, reinforcing my ability to 
+        analyze software challenges, implement robust solutions, and communicate effectively with both technical and 
+        non-technical stakeholders.
+    </p>
+
+    <h3>Key Competencies and Strengths</h3>
+
+    <h4>Collaborating in a Team Environment</h4>
+    <p>
+        Working in various team-based projects throughout the program has enhanced my ability to collaborate effectively 
+        using Agile methodologies, Git version control, and code reviews. I have experience with feature branching, 
+        resolving merge conflicts, and ensuring maintainability in team-driven development workflows.
+    </p>
+
+    <h4>Communicating with Stakeholders</h4>
+    <p>
+        Effective communication is essential in software development. I have worked on projects that required 
+        writing technical documentation, gathering requirements from stakeholders, and presenting technical concepts 
+        to non-technical audiences. My ability to explain complex programming logic clearly ensures smooth project 
+        collaboration.
+    </p>
+
+    <h4>Data Structures & Algorithms</h4>
+    <p>
+        A solid foundation in data structures and algorithms has allowed me to develop optimized and scalable solutions. 
+        Through hands-on implementation, I have worked extensively with sorting algorithms, tree structures, and database 
+        query optimizations. This expertise was particularly useful in my work on enhancement two, where I improved the 
+        efficiency of data retrieval in the Nuoro Weight-Tracking App by refactoring database queries.
+    </p>
+
+    <h4>Software Engineering & Databases</h4>
+    <p>
+        The development of my portfolio involved refining two major software artifacts: 
+    </p>
+    <ul>
+        <li>Nuoro Weight-Tracking Application (Enhancements 1 & 2) – A mobile application where I 
+            implemented UI/UX improvements, introduced data validation, and optimized database performance.</li>
+        <li>Grazioso Salvare Dashboard (Enhancement 3) – A MongoDB-powered dashboard where I 
+            secured credentials, improved database indexing, and implemented structured error handling.</li>
+    </ul>
+    <p>
+        These projects required working with object-oriented design principles, RESTful API integration, and real-time 
+        data visualization.
+    </p>
+
+    <h4>Security & Best Practices</h4>
+    <p>
+        Security is a critical component of software development. Throughout my coursework, I have implemented secure 
+        authentication methods, data encryption, and input validation techniques to prevent vulnerabilities such as 
+        SQL injection and XSS attacks. My work on database security in the Grazioso Salvare Dashboard focused on 
+        replacing hardcoded credentials with environment variables, improving error handling, and ensuring data integrity.
+    </p>
+
+    <h3>Portfolio Overview</h3>
+    <p>
+        This portfolio demonstrates my ability to develop, enhance, and maintain software solutions that are efficient, 
+        scalable, and secure. The three enhancements included in this capstone reflect my proficiency in:
+    </p>
+    <ul>
+        <li>Enhancement 1: Software Engineering & Design (Nuoro App – UI/UX, interactivity, input validation)</li>
+        <li>Enhancement 2: Algorithms & Data Structures (Nuoro App – Query optimizations, sorting, filtering)</li>
+        <li>Enhancement 3: Databases (Grazioso Dashboard – Secure database indexing, structured exception handling)</li>
+    </ul>
+
+    <p>
+        By integrating my knowledge in software engineering, data structures, and security best practices, 
+        this portfolio serves as a comprehensive representation of my technical and analytical abilities. 
+        I am confident that these skills will allow me to excel in the software development field and 
+        contribute effectively to any engineering team.
+    </p>
+</section>
+
 
 <section class="enhancement">
     <h3>Enhancement One: Software Engineering & Design</h3>
     <p>Focused on data visualization, interactivity, and validation to improve user experience.</p>
     <ul>
-        <li>Implemented <strong>RecyclerView</strong> for dynamic weight logging.</li>
-        <li>Integrated <strong>MPAndroidChart</strong> for progress visualization.</li>
-        <li>Added <strong>edit & delete</strong> functionality for user entries.</li>
-        <li>Fixed <strong>SMS permission handling</strong> for notifications.</li>
+        <li>Implemented RecyclerView for dynamic weight logging.</li>
+        <li>Integrated MPAndroidChart for progress visualization.</li>
+        <li>Added edit & delete functionality for user entries.</li>
+        <li>Fixed SMS permission handling for notifications.</li>
     </ul>
     <a href="enhancement-one.html" class="button">View Full Details</a>
 </section>
@@ -42,9 +142,9 @@
     <h3>Enhancement Two: Algorithms & Data Structures</h3>
     <p>Focused on sorting, filtering, and input validation to improve database efficiency.</p>
     <ul>
-        <li><strong>Sorting Options:</strong> Sort by Date (Asc/Desc) & Weight (Asc/Desc).</li>
-        <li><strong>Search Feature:</strong> Filter by date range & weight range.</li>
-        <li><strong>Database Optimization:</strong> Improved SQLite queries.</li>
+        <li>Sorting Options: Sort by Date (Asc/Desc) & Weight (Asc/Desc).</li>
+        <li>Search Feature: Filter by date range & weight range.</li>
+        <li>Database Optimization: Improved SQLite queries.</li>
     </ul>
     <a href="enhancement-two.html" class="button">View Full Details</a>
 </section>
@@ -54,10 +154,10 @@
     </div>
     <p>Focused on database enhancements including query optimization, secure credential storage, and robust error handling to improve database efficiency and security.</p>
     <ul>
-        <li><strong>Error Handling:</strong> Implemented structured exception handling in CRUD methods.</li>
-        <li><strong>Query Optimization:</strong> Added MongoDB indexes for frequently queried fields (e.g., breed, location).</li>
-        <li><strong>Secure Credential Storage:</strong> Replaced hardcoded credentials with environment variables.</li>
-        <li><strong>Unit Testing:</strong> Developed unit tests for CRUD operations to validate database interactions.</li>
+        <li>Error Handling: Implemented structured exception handling in CRUD methods.</li>
+        <li>Query Optimization: Added MongoDB indexes for frequently queried fields (e.g., breed, location).</li>
+        <li>Secure Credential Storage: Replaced hardcoded credentials with environment variables.</li>
+        <li>Unit Testing: Developed unit tests for CRUD operations to validate database interactions.</li>
     </ul>
     <a href="enhancement-three.html" class="button">View Full Details</a>
 </section>

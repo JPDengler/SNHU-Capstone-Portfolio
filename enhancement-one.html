@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enhancement One - Software Engineering & Design</title>
@@ -10,14 +11,16 @@
 
 <header>
     <h1>Enhancement One: Software Engineering & Design</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="enhancement-one.html">Enhancement One</a>
-        <a href="enhancement-two.html">Enhancement Two</a>
-        <a href="enhancement-three.html">Enhancement Three</a>
-        <a href="code-review.html">Code Review</a>
-    </nav>
+    <p>SNHU - Joseph Dengler - 2025</p>
 </header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="enhancement-one.html">Enhancement One</a>
+    <a href="enhancement-two.html">Enhancement Two</a>
+    <a href="enhancement-three.html">Enhancement Three</a>
+    <a href="code-review.html">Code Review</a>
+</nav>
 
 <section>
     <div class="header-with-button">
@@ -31,50 +34,60 @@
         </a>
     </div>
     <p>
-        The <strong>Nuoro Weight-Tracking App</strong> is a mobile application designed to 
+        The Nuoro Weight-Tracking App is a mobile application designed to 
         help users track their weight, set personal goals, and visualize progress over time. 
         Developed originally in CS-360: Mobile Architect & Programming, the app underwent 
-        significant upgrades in <strong>Enhancement One</strong> as part of the 
-        <strong>CS-499: Computer Science Capstone</strong>.
+        significant upgrades in Enhancement One as part of the 
+        CS-499: Computer Science Capstone.
     </p>
     <p>
         These enhancements focused on implementing industry-standard solutions, improving 
         user interactivity, and ensuring secure, reliable data handling. Major improvements 
-        included integrating <strong>RecyclerView</strong> for dynamic data management, 
-        <strong>MPAndroidChart</strong> for graphical data visualization, and addressing 
+        included integrating RecyclerView for dynamic data management, 
+        MPAndroidChart for graphical data visualization, and addressing 
         SMS permission handling for secure notifications.
     </p>
+</section>
+
+<section>
+    <h2>Full Documentation</h2>
+    <div class="pdf-container">
+        <iframe 
+            src="https://drive.google.com/file/d/1sS0oTyfaYMh3gQFeADC2NCkzbB7VdN37/preview" 
+            class="pdf-viewer">
+        </iframe>
+    </div>
 </section>
 
 <section>
     <h2>Key Improvements</h2>
     <ul>
         <li>
-            <strong>Input Validation:</strong> Ensured valid date format (MM/DD/YY) and weight 
+            Input Validation: Ensured valid date format (MM/DD/YY) and weight 
             range (1-500 lbs) to maintain data integrity.
         </li>
         <li>
-            <strong>Interactive Data Management:</strong> Replaced static TextView with 
+            Interactive Data Management: Replaced static TextView with 
             RecyclerView to allow users to edit and delete individual weight entries.
         </li>
         <li>
-            <strong>Data Visualization:</strong> Integrated MPAndroidChart to dynamically 
+            Data Visualization: Integrated MPAndroidChart to dynamically 
             display weight trends with a goal weight marker.
         </li>
         <li>
-            <strong>Improved SMS Permissions:</strong> Fixed broken request flows, ensuring 
+            Improved SMS Permissions: Fixed broken request flows, ensuring 
             proper handling of Android's permission model.
         </li>
         <li>
-            <strong>User Feedback Enhancements:</strong> Added detailed feedback for actions, 
+            User Feedback Enhancements: Added detailed feedback for actions, 
             including success messages, error dialogs, and confirmation prompts.
         </li>
         <li>
-            <strong>Database Enhancements:</strong> Refactored DatabaseHelper for real-time 
+            Database Enhancements: Refactored DatabaseHelper for real-time 
             updates and robust error handling.
         </li>
         <li>
-            <strong>Goal Weight Management:</strong> Validated goal weight inputs and 
+            Goal Weight Management: Validated goal weight inputs and 
             displayed the goal weight on the trend chart.
         </li>
     </ul>
@@ -102,6 +115,44 @@
         </li>
     </ul>
 </section>
+
+<section class="enhancement">
+    <h2>Source Code</h2>
+
+    <table class="source-table">
+        <tr>
+            <th>Original Source</th>
+            <th>Enhanced Source</th>
+        </tr>
+        <tr>
+            <td><button class="toggle-source" data-target="original-DatabaseHelper">DatabaseHelper.java</button></td>
+            <td><button class="toggle-source" data-target="enhanced-DatabaseHelper">DatabaseHelper.java</button></td>
+        </tr>
+        <tr>
+            <td><button class="toggle-source" data-target="original-DataDisplayActivity">DataDisplayActivity.java</button></td>
+            <td><button class="toggle-source" data-target="enhanced-DataDisplayActivity">DataDisplayActivity.java</button></td>
+        </tr>
+        <tr>
+            <td><button class="toggle-source" data-target="original-MainActivity">MainActivity.java</button></td>
+            <td><button class="toggle-source" data-target="enhanced-MainActivity">MainActivity.java</button></td>
+        </tr>
+        <tr>
+            <td><button class="toggle-source" data-target="original-SetGoalWeightActivity">SetGoalWeightActivity.java</button></td>
+            <td><button class="toggle-source" data-target="enhanced-SetGoalWeightActivity">SetGoalWeightActivity.java</button></td>
+        </tr>
+        <tr>
+            <td><button class="toggle-source" data-target="original-SmsPermissionActivity">SmsPermissionActivity.java</button></td>
+            <td><button class="toggle-source" data-target="enhanced-SmsPermissionActivity">SmsPermissionActivity.java</button></td>
+        </tr>
+        <tr>
+            <td></td> <!-- Empty cell since there's no original file -->
+            <td><button class="toggle-source" data-target="enhanced-WeightAdapter">WeightAdapter.java</button></td>
+        </tr>
+    </table>
+
+    <div id="source-output"></div>
+</section>
+
 
 <a id="screenshots"></a>
 <section>
@@ -211,6 +262,10 @@
 <footer>
     &copy; 2025 Joseph Dengler | <a href="index.html">Back to Home</a>
 </footer>
+
+<script src="code.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
 
 </body>
 </html>

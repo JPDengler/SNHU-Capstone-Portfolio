@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enhancement Three - Databases</title>
@@ -10,14 +11,16 @@
 
 <header>
     <h1>Enhancement Three: Databases</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="enhancement-one.html">Enhancement One</a>
-        <a href="enhancement-two.html">Enhancement Two</a>
-        <a href="enhancement-three.html">Enhancement Three</a>
-        <a href="code-review.html">Code Review</a>
-    </nav>
+    <p>SNHU - Joseph Dengler - 2025</p>
 </header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="enhancement-one.html">Enhancement One</a>
+    <a href="enhancement-two.html">Enhancement Two</a>
+    <a href="enhancement-three.html">Enhancement Three</a>
+    <a href="code-review.html">Code Review</a>
+</nav>
 
 <section>
     <div class="header-with-button">
@@ -31,12 +34,12 @@
         </a>
     </div>
     <p>
-        The <strong>Grazioso Salvare Dashboard</strong> is a data-driven web application designed for animal 
+        The Grazioso Salvare Dashboard is a data-driven web application designed for animal 
         rescue organizations, providing tools for filtering, visualizing, and managing rescue animal data. 
         Initially, the system faced challenges in query efficiency, error handling, security, and testing.
     </p>
     <p>
-        <strong>Enhancement Three</strong> focuses on improving the reliability, scalability, and security of 
+        Enhancement Three focuses on improving the reliability, scalability, and security of 
         the application by introducing optimized database queries, structured error management, secure credential 
         handling, and comprehensive unit testing. These updates align with industry best practices for robust 
         database solutions and enhance the overall user experience.
@@ -44,26 +47,36 @@
 </section>
 
 <section>
+    <h2>Full Documentation</h2>
+    <div class="pdf-container">
+        <iframe 
+            src="https://drive.google.com/file/d/1pOHqxP6R2nKZz6OFPHEAjgGFsYaV_jj9/preview" 
+            class="pdf-viewer">
+        </iframe>
+    </div>
+</section>
+
+<section>
     <h2>Key Improvements</h2>
     <ul>
         <li>
-            <strong>Error Handling:</strong> Structured exception handling was implemented in CRUD methods 
+            Error Handling: Structured exception handling was implemented in CRUD methods 
             to improve debugging and ensure application reliability.
         </li>
         <li>
-            <strong>Query Optimization:</strong> MongoDB indexes were added for commonly queried fields 
+            Query Optimization: MongoDB indexes were added for commonly queried fields 
             (e.g., breed, location) to enhance performance and scalability.
         </li>
         <li>
-            <strong>Secure Credential Storage:</strong> Hardcoded credentials were replaced with environment 
+            Secure Credential Storage: Hardcoded credentials were replaced with environment 
             variables for secure authentication and easier management.
         </li>
         <li>
-            <strong>Documentation:</strong> Inline comments and a detailed guide for MongoDB queries and 
+            Documentation: Inline comments and a detailed guide for MongoDB queries and 
             CRUD operations were added to improve maintainability.
         </li>
         <li>
-            <strong>Unit Testing:</strong> Comprehensive unit tests were developed to validate create, read, 
+            Unit Testing: Comprehensive unit tests were developed to validate create, read, 
             update, and delete operations, ensuring database reliability.
         </li>
     </ul>
@@ -74,26 +87,61 @@
     <p>The following technical changes were made as part of this enhancement:</p>
     <ul>
         <li>
-            <strong>Refactored AnimalShelter Class:</strong> Added error handling to log database exceptions 
+            Refactored AnimalShelter Class: Added error handling to log database exceptions 
             and prevent runtime failures.
         </li>
         <li>
-            <strong>Created MongoDB Indexes:</strong> Optimized commonly queried fields, reducing response 
+            Created MongoDB Indexes: Optimized commonly queried fields, reducing response 
             times and improving dashboard performance.
         </li>
         <li>
-            <strong>Credential Management:</strong> Replaced hardcoded credentials with environment variables 
+            Credential Management: Replaced hardcoded credentials with environment variables 
             using Python’s <code>os.getenv()</code>, enhancing security and maintainability.
         </li>
         <li>
-            <strong>Documentation:</strong> Documented MongoDB query structures and CRUD operations to assist 
+            Documentation: Documented MongoDB query structures and CRUD operations to assist 
             future developers and simplify onboarding.
         </li>
         <li>
-            <strong>Unit Testing:</strong> Designed unit tests to validate CRUD functionality, using a 
+            Unit Testing: Designed unit tests to validate CRUD functionality, using a 
             separate test collection to avoid interfering with production data.
         </li>
     </ul>
+</section>
+
+<section class="enhancement">
+    <h3>Enhancement Three: Source Code</h3>
+
+    <table class="source-table">
+        <tr>
+            <th>Original Source</th>
+            <th>Enhanced Source</th>
+        </tr>
+        <tr>
+            <td>
+                <button class="toggle-source" data-target="original-ModuleJosephDengler">ModuleJosephDengler.py</button>
+            </td>
+            <td>
+                <button class="toggle-source" data-target="enhanced-ModuleJosephDengler">ModuleJosephDengler.py</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="toggle-source" data-target="original-ProjectTwoDashboard">ProjectTwoDashboard.ipynb</button>
+            </td>
+            <td>
+                <button class="toggle-source" data-target="enhanced-ProjectTwoDashboard">ProjectTwoDashboard.ipynb</button>
+            </td>
+        </tr>
+        <tr>
+            <td></td> <!-- Empty cell since there's no original file -->
+            <td>
+                <button class="toggle-source" data-target="enhanced-test_crud_operations">test_crud_operations.py</button>
+            </td>
+        </tr>
+    </table>
+
+    <div id="source-output"></div>
 </section>
 
 <a id="screenshots"></a>
@@ -180,6 +228,10 @@
 <footer>
     &copy; 2025 Joseph Dengler | <a href="index.html">Back to Home</a>
 </footer>
+
+<script src="code.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
 
 </body>
 </html>

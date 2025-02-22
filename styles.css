@@ -3,151 +3,200 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1e1e2e; /* Dark primary background */
-    color: #f5f5f5; /* Light gray text */
+    background: linear-gradient(to bottom, #202020e8, #202020e8);
+    color: #c9c7c3; 
 }
 
 /* Header */
 header {
-    background-color: #27293d; /* Slightly lighter dark tone */
-    color: var(--text-color); /* Text color remains consistent */
-    padding: 20px;
+    background: linear-gradient(to bottom, #202020e8, #202020e8); 
+    color: #a83e00;
+    padding: 5px;
     text-align: center;
-    font-family: OCR A Std, monospace;
+    font-size: 1.1em;
+    font-family: "BazarMedium", "OCR A Std", monospace;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    transition: all 0.3s ease-in-out;
 }
 
-/* Header Styles */
-header h1, section h2, .enhancement h3, .section-header {
-    color: #ff7900; /* Vibrant orange for headers */
-    font-size: 1.8em; /* Slightly larger for h1 */
-    font-family: OCR A Std, monospace;
-    text-align: center;
-    margin-top: 20px;
-    text-shadow: 5px 5px 15px rgb(0, 0, 0);
-    margin-bottom: 10px;
+header:hover {
+    color: #9fffb7; 
+    transition: text-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+
+header p {
+    color: #cecece;
+    text-shadow: 1.5px 1.5px 1px #001310;
+    margin-top: -1%;
+    margin-bottom: 1%;
 }
 
 /* Specific section headers */
 section h2 {
-    color: #ff7900; /* Orange for all section headers */
-    font-size: 1.5em;
+    color: #a83e00;
+    text-shadow: 2px 2px 1px #001310;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: .5px;
+}
+
+h1 {
+    margin-top: -.5px;
+    font-size: 3.5em; 
+    font-weight: bold;
+    text-shadow: 2px 2px 1px #001310;
+}
+
+h2 {
+    margin-top: -.5px;
+    font-size: 2em; 
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5em; 
+    font-weight: normal;
+}
+
+ul {
+    font-size: .8em;
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+ul ul {
+    list-style-type: circle;
+    margin-left: 30px;
+    font-size: .8em;
+}
+
+li {
+    font-size: .8em;
+    margin-bottom: 5px;
+}
+
+section p {
+    color: #c9c7c3; 
+    font-size: 1.2em;
+    text-align: center;
     margin-bottom: 15px;
 }
 
-.welcome-header {
-    color: #ff7900; /* Orange for welcome header */
-    font-size: 1.5em;
+section ul {
+    color: #c9c7c3; 
+    font-size: 1.3em;
+}
+
+.pdf-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    filter: invert(1) hue-rotate(180deg); /* Inverts colors for dark mode */
+}
+
+section figure {
     text-align: center;
-    margin: 20px 0;
+    color: #a83e00; 
+    font-weight: bolder;
+}
+
+.pdf-viewer {
+    width: 100%;
+    height: 700px;
+    border: none;
+    display: block; 
+    padding: 0;
+    margin: 0;
 }
 
 /* Navigation Bar */
 nav {
-    background-color: #27293d; /* Matches header for uniformity */
+    background-color: #202020e8;
     padding: 10px;
     text-align: center;
 }
 
 nav a {
-    color: #f5f5f5; /* Light gray for better readability */
+    color: #c9c7c3;
+    font-size: 125%;
     text-decoration: none;
     padding: 10px 20px;
     display: inline-block;
-    border-radius: 5px; /* Slightly rounded links */
+    border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #ff7900; /* Orange for hover effect */
-    color: #121212; /* Darker text on hover for contrast */
+    background-color: #a83e00;
+    color: #3a3939;
 }
 
 /* Section Styling */
 section {
     max-width: 900px;
     margin: 20px auto;
-    padding: 20px;
-    background: #27293d; /* Slightly lighter dark tone for contrast */
+    padding: 15px;
+    background: #272727; 
+    border: 1px solid #a83e00;
     border-radius: 8px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-    color: #f5f5f5; /* Text remains light gray */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    color: #c9c7c3;
 }
 
 /* Enhancement Cards */
 .enhancement {
     margin-bottom: 20px;
-    padding: 20px;
-    border: 1px solid #3a3b4f; /* Subtle border */
+    padding: 15px;
+    border: 2px solid #a83e00; 
     border-radius: 8px;
-    background-color: #1e1e2e; /* Match the theme */
-    color: #f5f5f5;
+    background-color: #272727;
+    color: #c9c7c3;
 }
 
-.enhancement h3,
-.section-header {
-    color: #ff7900; /* Vibrant orange for section headers */
-    font-size: 1.5em;
+.enhancement h3, .section-header {
+    color: #a83e00; 
+    font-size: 1.9em;
     font-weight: bold;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 10px;
+    text-shadow: 2px 2px 1px #001310;
 }
 
 /* Buttons */
 .button {
     display: block;
-    width: 200px;
+    width: 150px;
+    font-weight: bold;
     margin: 10px auto;
     padding: 10px;
     text-align: center;
-    background-color: #ff7900; /* Bright orange for buttons */
-    color: #121212; /* Dark text for contrast */
+    background-color: #a83e00; 
+    color: #c9c7c3; 
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .button:hover {
-    background-color: #ff9c42; /* Lighter orange on hover */
+    background-color: #c9c7c3; 
+    color: #a83e00; 
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #27293d; /* Match header and nav */
-    color: #a6a6a6; /* Muted gray for footer text */
+    background-color: #131313; 
+    color: #3a3a39; 
     margin-top: 20px;
-}
-
-/* Screenshot Grid */
-.screenshot-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 20px; 
-    justify-items: center; 
-    align-items: start; 
-    margin: 20px 0; 
-}
-
-.screenshot-container figure {
-    text-align: center; 
-    margin: 20px 0; /* Adjusted spacing for consistency */
-}
-
-.screenshot-container figcaption {
-    font-weight: bold; /* Make titles bold */
-    font-size: 1.2em; /* Slightly larger font */
-    text-align: center; /* Center titles */
-    margin-bottom: 10px; /* Space between title and image */
-}
-
-.screenshot-container img {
-    max-width: 90%; /* Keep images responsive */
-    height: auto; /* Maintain aspect ratio */
-    border: 1px solid #3a3b4f; 
-    border-radius: 5px; 
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Slightly darker shadow */
 }
 
 /* Screenshot Grid */
@@ -162,7 +211,7 @@ footer {
 .screenshot-container img {
     max-width: 90%;
     height: auto;
-    border: 1px solid #3a3b4f;
+    border: 1px solid #a83e00; /* NES Red */
     border-radius: 5px;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
     cursor: pointer;
@@ -175,7 +224,7 @@ footer {
 
 /* Lightbox Styling */
 .lightbox {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -188,7 +237,7 @@ footer {
 }
 
 .lightbox:target {
-    display: flex; /* Show lightbox when targeted */
+    display: flex;
 }
 
 .lightbox-content {
@@ -212,7 +261,6 @@ footer {
     cursor: pointer;
 }
 
-
 /* Header with Button */
 .header-with-button {
     display: flex;
@@ -229,8 +277,8 @@ footer {
 .repo-button {
     text-decoration: none;
     padding: 8px 12px;
-    background-color: #ff7900; /* Orange for buttons */
-    color: #121212; /* Dark text for contrast */
+    background-color: #a83e00; 
+    color: #c9c7c3; 
     font-size: 0.9em;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -238,9 +286,11 @@ footer {
 }
 
 .repo-button:hover {
-    background-color: #ff9c42; /* Lighter orange for hover */
+    background-color: #c9c7c3;
+    color: #a83e00; 
 }
 
+/* Video Container */
 .video-container {
     display: flex;
     flex-direction: column;
@@ -251,8 +301,110 @@ footer {
 }
 
 iframe {
-    width: 100%; /* Make the video responsive */
-    max-width: 720px; /* Limit maximum width */
-    aspect-ratio: 16 / 9; /* Maintain proper aspect ratio */
-    border: none; /* Remove the border */
+    width: 100%;
+    max-width: 720px;
+    aspect-ratio: 16 / 9;
+    border: none;
+}
+
+.source-table {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.source-table td {
+    padding: 10px;
+}
+
+.toggle-source {
+    display: inline-block;
+    width: 300px;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "OCR A Std", monospace;
+    color: #ffffff;
+    background: #a83e00; 
+    border: 3px solid #3a3a39;
+    border-radius: 50px;
+    box-shadow: inset -3px -3px 5px #3a3a39, inset 3px 3px 5px #c9c7c3, 3px 3px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 2px black;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+
+.toggle-source:hover {
+    background: #919191;
+    transform: scale(1.05);
+}
+
+.toggle-source:active {
+    transform: scale(0.95);
+    box-shadow: inset 2px 2px 4px #3a3a39, inset -2px -2px 4px #c9c7c3;
+}
+
+pre {
+    white-space: pre-wrap; /* Ensures text wraps naturally */
+    max-width: 100%; 
+    padding: 2px;
+    background-color: #2a2a2a; 
+    border-radius: 2px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+code {
+    font-family: monospace;
+    font-size: 1em;
+    color: #f5f5f5; 
+}
+
+.welcome-section {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #272727;
+    border: 2px solid #a83e00;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    color: #c9c7c3;
+}
+
+.welcome-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between image and text */
+}
+
+.profile-pic {
+    width: 120px; /* Adjust size as needed */
+    height: 120px;
+    border-radius: 50%; /* Makes it circular */
+    border: 2px solid #ff5e00;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.welcome-text {
+    flex: 1; /* Ensures text takes up remaining space */
+}
+
+.welcome-text h2 {
+    color: #afafaf;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.welcome-text p {
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+/* Paragraph Styling */
+.self-assessment p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: justify;
 }
